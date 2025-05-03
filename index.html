@@ -7,11 +7,12 @@
     <title>Tuwaiq</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link rel="shortcut icon" href="./imgs/Tuwaiq-Logo.png" type="image/x-icon">
     <style>
         ::-webkit-scrollbar {
-            width: 10px;
+            width: 6px;
         }
 
         ::-webkit-scrollbar-track {
@@ -24,6 +25,25 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: #4931af;
+        }
+
+        .card1-shadow:hover {
+            box-shadow: 10px 10px #8aa8d6;
+            transition: 1s;
+        }
+
+        .card2-shadow:hover {
+            box-shadow: 10px 10px #ffb3c2;
+            transition: 1s;
+        }
+
+        .card3-shadow:hover {
+            box-shadow: 10px 10px #a0cc9f;
+            transition: 1s;
+        }
+
+        .scroll::-webkit-scrollbar {
+            display: none;
         }
     </style>
 </head>
@@ -136,8 +156,8 @@
         </div>
     </nav>
     <!-- nav bar end -->
-    <section style="height: 80vh; margin-top: 5%;" class="container-fluid">
-        <div style="height: 100%;" class="row  gap-3 justify-content-center align-content-start">
+    <section style="margin-top: 5%;" class="container-fluid mb-5">
+        <div class="row  gap-3 justify-content-center align-content-start">
             <div style="height: 100%; background-color: #e7ddff;"
                 class="col-11 col-lg-7 d-flex flex-column justify-content-start rounded-4  h-auto">
                 <div class="px-4 pt-4">
@@ -152,7 +172,9 @@
                             href="" class="btn px-5 py-2 align-content-end justify-content-end fw-semibold">Join Now</a>
                     </div>
                 </div>
-                <img style="height: 70%; width: 55%;" src="./imgs/image.png" alt="" class="card-img rounded-4">
+                <div class="w-100 h-100 d-flex align-items-end">
+                    <img style="height: 100%; width: 55%;" src="./imgs/image.png" alt="" class="card-img rounded-4">
+                </div>
             </div>
             <div class="col-11 col-lg-4">
                 <div style="background-color: #bffffa;" class="w-100 p-4 rounded-4 pb-5 gap-1">
@@ -162,9 +184,10 @@
                 </div>
                 <div style="background-color: #fedde1;" class="w-100 p-4 mt-4 rounded-4">
                     <div class="d-flex">
-                        <h1 style="color: #ff536d;" class="fs-4 fw-semibold">Holberton - The Foundation Track</h1>
-                        <a style="background-color: #ff536d; color: white;" href=""
-                            class="btn   align-content-end justify-content-end fw-semibold rounded-5 fs-6">Sign in
+                        <h1 style="color: #ff536d;" class="fs-4 fw-semibold w-75">Holberton - The Foundation Track</h1>
+                        <a style="background-color: #ff536d; color: white; height: 7vh;" href=""
+                            class="btn  d-flex align-items-center justify-content-center w-50 align-content-end justify-content-end fw-semibold rounded-5 fs-6">Sing
+                            in
                             Now</a>
                     </div>
                     <p class="fs-6">The Foundation Track of Holberton Global Academy the first of its kind in the Middle
@@ -176,8 +199,417 @@
             </div>
         </div>
     </section>
+    <section class=" container-fluid d-flex justify-content-center align-items-center flex-wrap gap-3 mb-5">
+        <div style="background-color: #bed9fe;height: 60vh; width: 60vh;"
+            class="card1-shadow d-flex flex-column align-items-start py-5 px-4 rounded-4 gap-4">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <h1 class="fs-4 fw-normal">Bootcamps</h1><a
+                    style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                    class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+            </div>
+            <p>
+                Professional bootcamps and courses to earn the necessary skills in specialized and promising
+                technologies fields in the labor market.
+            </p>
+            <div class="h-50 w-100 d-flex justify-content-center">
+                <img style="height: 100%;" src="./imgs/Asset-1.png" alt="">
+            </div>
+        </div>
+        <div style="background-color: #ffe7ef;height: 60vh; width: 60vh;"
+            class="card2-shadow d-flex flex-column align-items-start py-5 px-4 rounded-4 gap-4">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <h1 class="fs-4 fw-normal">Programs</h1><a
+                    style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                    class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+            </div>
+            <p>
+                Professional programs lasting 1-3 weeks, aimed at developing your technical skills; with a qualitative
+                learning methodology and a competitive environment based on practical applications.
+            </p>
+            <div class="h-50 w-100 d-flex justify-content-center">
+                <img style="height: 100%;" src="./imgs/art_for_programs.svg" alt="">
+            </div>
+        </div>
+        <div style="background-color: #d3ffd5;height: 60vh; width: 60vh;"
+            class="card3-shadow d-flex flex-column align-items-start py-5 px-4 rounded-4 gap-4">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <h1 class="fs-4 fw-normal">Tuwaiq Talks</h1><a
+                    style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                    class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+            </div>
+            <p>
+                Enriching knowledge meetings, held in cooperation with several leading and advanced entities, to discuss
+                various topics of modern technologies, communication, and business.
+            </p>
+            <div class="h-50 w-100 d-flex justify-content-center">
+                <img style="height: 100%;" src="./imgs/Asset-3.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class=" px-5">
+        <h1 class="fs-3">Registration closing soon</h1>
+    </section>
+    <section
+        class="overflow-x-scroll scroll container-fluid d-flex flex-column align-items-start justify-content-center px-5 w-100">
+        <div class="d-flex align-items-center gap-4 ">
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/laptop.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Executive Programs</p>
+                    <p class="card-text fw-bold m-0 fs-5">Excel Program for Beginners</p>
+                    <p class="text-warning fw-normal">Program – 1 Week</p>
+                    <p class="text-success fw-normal">Ends tomorrow</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/psvxh1jc.vwh.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Mechatronics Engineering</p>
+                    <p class="card-text fw-bold m-0 fs-5">Fundamentals of Printed Circuit Board (PCB) Design</p>
+                    <p class="text-warning fw-normal">Program – 1 Week</p>
+                    <p class="text-success fw-normal">Ends in 7 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/barin.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Data Science and Artificial Intelligence</p>
+                    <p class="card-text fw-bold m-0 fs-5">Implementing an SQL Database Using Python</p>
+                    <p class="text-warning fw-normal">Program – 1 Week</p>
+                    <p class="text-success fw-normal">Ends in 7 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/barin.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Data Science and Artificial Intelligence</p>
+                    <p class="card-text fw-bold m-0 fs-5">Basics of Artificial Intelligence</p>
+                    <p class="text-warning fw-normal">Program – 2 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 8 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/psvxh1jc.vwh.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Mechatronics Engineering</p>
+                    <p class="card-text fw-bold m-0 fs-5">Fundamentals of Mechatronics</p>
+                    <p class="text-warning fw-normal">Program – 2 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 22 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/phonepng.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Software and Application Development</p>
+                    <p class="card-text fw-bold m-0 fs-5">Basics of Python Programming Language</p>
+                    <p class="text-warning fw-normal">Program – 2 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 22 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/phonepng.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Software and Application Development</p>
+                    <p class="card-text fw-bold m-0 fs-5">Web Development Using Python</p>
+                    <p class="text-warning fw-normal">Program – 12 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 42 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/phonepng.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Software and Application Development</p>
+                    <p class="card-text fw-bold m-0 fs-5">Web Development Using Java</p>
+                    <p class="text-warning fw-normal">Program – 12 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 49 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/barin.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Data Science and Artificial Intelligence</p>
+                    <p class="card-text fw-bold m-0 fs-5">LLAMA-Based Generative Artificial Intelligence</p>
+                    <p class="text-warning fw-normal">Program – 6 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 50 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/psvxh1jc.vwh.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Mechatronics Engineering</p>
+                    <p class="card-text fw-bold m-0 fs-5">Robot Programming Using Arduino</p>
+                    <p class="text-warning fw-normal">Program – 5 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 56 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/phonepng.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Software and Application Development</p>
+                    <p class="card-text fw-bold m-0 fs-5">Game Development Using Unity</p>
+                    <p class="text-warning fw-normal">Program – 5 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 56 days</p>
+                </div>
+            </div>
+            <div class="bg-light rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="width: 20rem; height: 30rem; position: inherit;">
+                <img src="./imgs/barin.png" class="card-img-top" alt="...">
+                <div class=" d-flex flex-column justify-content-center gap-0 m-0">
+                    <p class="fw-normal m-0">Data Science and Artificial Intelligence</p>
+                    <p class="card-text fw-bold m-0 fs-5">Artificial Intelligence and Machine Learning</p>
+                    <p class="text-warning fw-normal">Program – 5 Weeks</p>
+                    <p class="text-success fw-normal">Ends in 56 days</p>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <section
+        class="overflow-x-scroll scroll container-fluid d-flex flex-column align-items-start justify-content-center px-5 w-100">
+        <div class="d-flex align-items-center gap-4 ">
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/crag.jpg); background-size: cover; background-position:center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Launch of 'Garage Academy' in partnership with Tuwaiq
+                        Academy to support accelerator and incubator projects at The Garage.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">05/05/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news2.png); background-size: cover; background-position:center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy and Misk Schools students win 4 gold and
+                        bronze medals at the Geneva International Inventions Exhibition.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">13/04/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news3.png); background-size: cover; background-position:center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy celebrates its students' victory in the
+                        Apple Global Challenge.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">10/04/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news4.jpeg); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy launches the Future Technologies Leaders
+                        Program, sponsored by the National Program for Information Technology Development.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">06/04/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news5.jpg); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">The conclusion of the 'Tuwaiq Employment Program' with
+                        over 8,000 interviews across 120 organizations.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">27/02/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news6.jpg); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy wins the 'Digital Prosperity' award from
+                        the International Digital Cooperation Organization.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">20/02/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news7.jpg); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy launches new global partnerships and 600
+                        boot camps and programs at its annual event at LEAP 25.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">12/02/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news8.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy launches 'Holberton Academy,' the first
+                        global academy in the Middle East.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">15/01/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news9.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy announces the opening of registration for
+                        the Tuwaiq Cyber Bootcamp, with employment opportunities for outstanding participants.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">10/01/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news10.webp); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy announces its online learning tracks
+                        through the 'Satr' platform.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">08/01/2025</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news11.jpg); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">The Minister of Education inaugurates the first high
+                        school for tech-talented students at Tuwaiq Academy.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">25/12/2024</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news12.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy launches a partnership with 'Uptime
+                        Institute' offering professional boot camps in data center management.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">22/12/2024</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news13.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy launches 150 new tech boot camps and
+                        programs for 2025.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">03/12/2024</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news14.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Al-Jawhara and Asil rank first in the Arab world and ninth
+                        globally in the WRO 2024 World Robotics Olympiad.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">30/11/2024</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class=" rounded-4 d-flex flex-column justify-content-between py-4 px-4 my-4"
+                style="background-image: url(./imgs/news15.png); background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: darken; width: 20rem; height: 30rem;">
+                <div class=" d-flex flex-column justify-content-end h-100  m-0">
+                    <h1 class="fw-normal m-0 text-light fs-6">Tuwaiq Academy wins a silver medal and 3 special awards at
+                        the Seoul International Inventions Exhibition in Korea.</h1>
+                    <hr style="color: white;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="fw-normal text-light">29/11/2024</p>
+                        <a style="background-color: white; color: rgb(0, 0, 0); height: 7vh;" href=""
+                            class="btn px-4  d-flex align-items-center justify-content-center align-content-end justify-content-end fw-semibold rounded-5 fs-6">More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+    </section>
     <!-- footer -->
+
+
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
