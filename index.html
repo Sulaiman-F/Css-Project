@@ -9,10 +9,132 @@
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8z4+2e5c3e5a5e5b5e5b5e5b5e5b5e5b5e5" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-
+<body dir="ltr">
+<section style="background-color: #f9fafb; height: 80vh;">
+<div class="latest-courses px-4 my-4">
+<div class="latest-courses-header d-flex flex-row flex-nowrap justify-content-between">
+<h2>Latest satr courses</h2>
+<button class="learningButton rounded-3">Start learning
+    <img src="./images/arrow.svg" class="arrow-image">
+</button>
+</div>
+</div>
+<div class="d-flex flex-nowrap gap-6 ">
+<div class="satr-courses w-50 d-flex justify-content-center align-items-center overflow-x-scroll px-4 my-4">
+    <a class="text-decoration-none" href="https://satr.codes/course/sx8doDZi2s/view">
+    <div class="satr-cards border rounded-4 py-2 px-2 object-fit-contain">
+        <div class="p-4">
+            <span class="position-absolute top-60% start-60% rounded-2" style="background-color: #D8EDF7; color: #4DC0DA; margin-top: 1%;
+            margin-left: 1%;">Latest course</span>
+    <img class="courses-card-image rounded-3" src="./images/satr-first-card.svg">
+    <div class="title py-3">
+        <h3 class="font-semi-bold text-secondary-emphasis">Flutter 103</h3>
+    </div>
+    </div>
+    <div class="sub-title d-flex flex-row justify-content-between">
+        <div class="skill-level">
+        <span>Intermediate</span>
+         </div>
+         <div class="subscribers">
+        <span style="color: #FFC653;">17998 Subscribers</span>
+       </div>
+       <div class="time">
+        <span class="fs-xxlg" style="color: #4BC4A6;">•</span>
+        <span style="color: #4BC4A6;">00:56:32</span>
+       </div>
+    </div>
+    <div class="text-body">
+      <p>The course aims to introduce you to how to build interactive interfaces using Flutter's various tools. Start by planning interfaces using Stack and Expanded,
+         then enhance the user experience with a set of tools.</p>
+    </div>
+    </div>
+  </a>
+</div>
+<div class="satr-courses w-50 d-flex justify-content-center align-items-center overflow-x-scroll">
+    <a class="text-decoration-none" href="https://satr.codes/course/EZOmLn9dQn/view">
+    <div class="satr-cards border rounded-4 py-2 px-2 object-fit-contain">
+        <div class="p-4">
+            <span class="position-absolute top-60% start-60% rounded-2" style="background-color: #D8EDF7; color: #4DC0DA; margin-top: 1%;
+            margin-left: 1%;">Latest course</span>
+    <img class="courses-card-image rounded-3" src="./images/network.png">
+    <div class="title py-3">
+        <h3 class="font-semi-bold text-secondary-emphasis">Network Security 101</h3>
+    </div>
+    </div>
+    <div class="sub-title d-flex flex-row justify-content-between">
+        <div class="skill-level">
+        <span>Beginner</span>
+         </div>
+         <div class="subscribers">
+        <span style="color: #FFC653;">4,687 Subscribers</span>
+       </div>
+       <div class="time">
+        <span class="fs-xxlg" style="color: #4BC4A6;">•</span>
+        <span style="color: #4BC4A6;">01:19:51</span>
+       </div>
+    </div>
+    <div class="text-body">
+      <p>The Network Security course aims to provide trainees with the knowledge and 
+        skills necessary to protect networks from growing cyber threats, by learning about network design.</p>
+    </div>
+    </div>
+  </a>
+</div>
+<div class="satr-courses w-50 d-flex justify-content-center align-items-center overflow-x-scroll">
+    <a class="text-decoration-none" href="https://satr.codes/course/EZOmLn9dQn/view">
+    <div class="satr-cards border rounded-4 py-2 px-2 object-fit-contain">
+        <div class="p-4">
+            <span class="position-absolute top-60% start-60% rounded-2" style="background-color: #D8EDF7; color: #4DC0DA; margin-top: 1%;
+            margin-left: 1%;">Latest course</span>
+    <img class="courses-card-image rounded-3" src="./images/cyber.png">
+    <div class="title py-3">
+        <h3 class="font-semi-bold text-secondary-emphasis">Cybersecurity Fundamentals</h3>
+    </div>
+    </div>
+    <div class="sub-title d-flex flex-row justify-content-between">
+        <div class="skill-level">
+        <span>Beginner</span>
+         </div>
+         <div class="subscribers">
+        <span style="color: #FFC653;">2,855 Subscribers</span>
+       </div>
+       <div class="time">
+        <span class="fs-xxlg" style="color: #4BC4A6;">•</span>
+        <span style="color: #4BC4A6;">04:52:21</span>
+       </div>
+    </div>
+    <div class="text-body">
+      <p>The Network Security course aims to provide trainees with the knowledge and 
+        skills necessary to protect networks from growing cyber threats, by learning about network design.</p>
+    </div>
+    </div>
+  </a>
+</div>
+</div>
+</section>
+<section class="mt-5">
+    <div class="rounded-4 px-3 py-3" style="background-color: #b4ebe7;">
+       <div class="form-container">
+        <form class="email-form">
+         <p class="fs-3 font-semi-bold" style="color: #6438dd;">Subscribe to News Letter</p>
+         <div class="form-input">
+            <div class="">
+              <input class="input1 col mb-2 me-2" type="text"  name="first-name" placeholder="First Name" required>
+              <input class="input2 col mb-2 me-2" type="text" name="first-name" placeholder="Last Name" required>
+            </div>
+         </div>
+         <div class="email-subscribe">
+          <input class="input3 mb-2 me-2" type="email" name="email" placeholder="name@email.com"> 
+          <button class="news-letter mb-2 me-2">Subscribe
+            <img class="button-icon" src="./images/paper-plane.svg">
+          </button>
+         </div>
+        </form>
+      </div>
+</section>
 </body>
 
 </html>
